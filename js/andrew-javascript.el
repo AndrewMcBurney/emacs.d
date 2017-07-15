@@ -21,8 +21,11 @@
 
 ;;; Code:
 
-(setq-default js2-basic-offset 2
-              js-indent-level 2)
+(setq js-indent-level                 2
+      js2-basic-offset                2
+      js-switch-indent-offset         2
+      js2-indent-switch-body          2
+      js2-strict-missing-semi-warning t)
 
 (provide 'andrew-javascript)
 

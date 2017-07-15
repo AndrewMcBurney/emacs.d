@@ -17,6 +17,8 @@
 ;;; Commentary:
 
 ;; Spacemacs global modes configuration
+;;
+;; Adds autocomplete in every buffer
 
 ;;; Code:
 
@@ -25,6 +27,18 @@
 (global-prettify-symbols-mode t)
 (global-linum-mode t)
 (spacemacs/toggle-camel-case-motion-globally)
+(global-prettify-symbols-mode)
+
+(setq locale-coding-system    'utf-8)
+(set-terminal-coding-system   'utf-8)
+(set-keyboard-coding-system   'utf-8)
+(set-selection-coding-system  'utf-8)
+(prefer-coding-system         'utf-8)
+(set-language-environment     'utf-8)
+
+;; IBuffer
+(with-eval-after-load 'projectile
+  (add-to-list 'projectile-globally-ignored-directories "node_modules"))
 
 (provide 'andrew-global)
 
