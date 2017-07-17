@@ -9,5 +9,6 @@ SECTION("") {
     ""
   };
   std::string output = "";
+
   REQUIRE(input == output);
 }
