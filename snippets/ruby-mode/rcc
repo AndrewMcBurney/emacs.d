@@ -48,38 +48,12 @@ $0class $1sController < ApplicationController
   # ***************************
 
   # GET /${1:$(downcase yas-text)}
-  # Aggregate by featured ${1:$(downcase yas-text)} (featured boolean)
   def index
     @images = $1.paginate(page: params[:page], per_page: 12)
   end
 
   # GET /${1:$(downcase yas-text)}/:title_slug
-  # Show single ${1:$(downcase yas-text)} in previewer view
   def show() end
-
-  # GET /${1:$(downcase yas-text)}/types/copic
-  # Aggregate by copic marker paintings
-  def copic
-    @images = $1.where(${1:$(downcase yas-text)}_type: :copic).paginate(page: params[:page], per_page: 12)
-  end
-
-  # GET /${1:$(downcase yas-text)}/types/painting
-  # Aggregate by paintings
-  def paintings
-    @images = $1.where(${1:$(downcase yas-text)}_type: :painting).paginate(page: params[:page], per_page: 12)
-  end
-
-  # GET /${1:$(downcase yas-text)}/types/sketch
-  # Aggregate by sketches
-  def sketches
-    @images = $1.where(${1:$(downcase yas-text)}_type: :sketch).paginate(page: params[:page], per_page: 12)
-  end
-
-  # GET /${1:$(downcase yas-text)}/types/for_sale
-  # Select ${1:$(downcase yas-text)}s for sale (for_sale boolean)
-  def for_sale
-    @images = $1.where(for_sale: true).paginate(page: params[:page], per_page: 12)
-  end
 
   # ***************************
   # U - Update Methods

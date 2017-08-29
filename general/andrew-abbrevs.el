@@ -25,6 +25,12 @@
 (define-abbrev-table 'eshell-mode-abbrev-table
   '(
     ("gcr" "git commit -m\"r\"" nil 3)
+    ("l" "ls -CF" nil 3)
+    ("la" "ls -A" nil 3)
+    ("ll" "ls -alF" nil 3)
+    ("ls" "ls -G" nil 3)
+    ("k9" "kill -9" nil 3)
+    ("port" "lsof -i -P -n | grep" nil 3)
     ))
 
 (define-abbrev-table 'text-mode-abbrev-table
