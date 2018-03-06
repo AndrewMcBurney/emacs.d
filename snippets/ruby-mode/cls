@@ -6,16 +6,16 @@
 # --
 # frozen_string_literal: true
 
-#
-# ${1:file-name-nondirectory}
-#
-class ${2:`(let ((fn (capitalize (file-name-nondirectory
-                                 (file-name-sans-extension
-                                 (or (buffer-file-name)
-                                     (buffer-name (current-buffer))))))))
-             (replace-regexp-in-string "_" "" fn t t))`}
-  def initialize(args)
-  end
+module ${1:module_name}
+  # ${2:`(let ((fn (capitalize (file-name-nondirectory
+                                  (file-name-sans-extension
+                                  (or (buffer-file-name)
+                                      (buffer-name (current-buffer))))))))
+              (replace-regexp-in-string "_" "" fn t t))`}
+  class $2
+    def initialize
+    end
 
-  $0
+    $0
+  end
 end

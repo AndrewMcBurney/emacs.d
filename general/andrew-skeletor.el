@@ -29,6 +29,7 @@
 (skeletor-define-template "rails-es6")
 (skeletor-define-template "ruby-base-project")
 (skeletor-define-template "ruby-cli-activerecord")
+(skeletor-define-template "scala-sbt-project")
 (skeletor-define-template "sinatra-slim-sass-coffee")
 
 (provide 'andrew-skeletor)

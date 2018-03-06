@@ -12,7 +12,7 @@
 ;; Created: `(format-time-string "%Y-%m-%d")`
 ;; Keywords: style
 
-;; URL: https://github.com/AndrewMcBurney/dotfiles
+;; URL: https://github.com/AndrewMcBurney/emacs.d
 ;; Compatibility: only tested with Spacemacs (Emacs 25.0)
 ;; Version: 0.0.1
 ;; Last-Updated: `(format-time-string "%Y-%m-%d")`
